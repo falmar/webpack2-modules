@@ -1,6 +1,9 @@
-import {sum} from './util'
-import './image_viewer.js'
+const button = document.createElement('button')
+button.textContent = 'Click Me'
+button.addEventListener('click', () => {
+  System.import('./image_viewer').then(module => {
+    module.default()
+  })
+})
 
-console.log(
-  sum(1, 2)
-)
+document.body.appendChild(button)
