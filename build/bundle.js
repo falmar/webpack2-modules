@@ -73,11 +73,12 @@
 "use strict";
 
 
-var sum = function sum(a, b) {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var sum = exports.sum = function sum(a, b) {
   return a + b;
 };
-
-module.exports = sum;
 
 /***/ },
 /* 1 */
@@ -86,9 +87,9 @@ module.exports = sum;
 "use strict";
 
 
-var util = __webpack_require__(0);
+var _util = __webpack_require__(0);
 
-console.log(util(1, 2));
+console.log((0, _util.sum)(1, 2));
 
 /***/ }
 /******/ ]);

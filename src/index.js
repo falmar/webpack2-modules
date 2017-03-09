@@ -1,5 +1,5 @@
-const util = require('./util.js')
+import {sum} from './util'
 
 console.log(
-  util(1, 2)
+  sum(1, 2)
 )
