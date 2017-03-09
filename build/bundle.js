@@ -68,23 +68,27 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-const sum = (a, b) => a + b
+"use strict";
 
-module.exports = sum
 
+var sum = function sum(a, b) {
+  return a + b;
+};
+
+module.exports = sum;
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-const util = __webpack_require__(0)
+"use strict";
 
-console.log(
-  util(1, 2)
-)
 
+var util = __webpack_require__(0);
+
+console.log(util(1, 2));
 
 /***/ }
 /******/ ]);
